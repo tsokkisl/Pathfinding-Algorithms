@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pathfinding Algorithms</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      text-align: center;
+    }
+    #map {
+      width:100%;
+      height:100%;
+      line-height: 0;
+    }
+    #map div {
+      display:inline-block;
+      vertical-align:top;
+    }
+    button {
+      margin: 1px;
+    }
+    #input p {
+      line-height: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="input">
+    <p><button id="generateMap" class="btn btn-success">Generate Map</button></p>
+    <p><button id="A*" class="btn btn-primary">A*</button> <button id="Dijkstra" class="btn btn-primary">Dijkstra</button> <button id="BestFirst" class="btn btn-primary">Best First</button></p>
+    <p>N: <input type="text" id="N" style="width:2%"></p>
+    <p>Start (x, y): <input type="text" id="startx" style="width:2%"> <input type="text" id="starty" style="width:2%">  Finish (x, y): <input type="text" id="finishx" style="width:2%"> <input type="text" id="finishy" style="width:2%"></p>
+  </div>
+  <div id="map"></div>
+  <div id="message"></div>
+  <script src="js/pathfinder.js"></script>
+</body>
+</html>
